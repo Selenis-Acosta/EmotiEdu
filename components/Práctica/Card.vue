@@ -2,7 +2,7 @@
     <v-card
       class="mx-auto"
       prepend-icon="$vuetify"
-      :subtitle
+      :subtitle="subtitle"
       width="400"
     >
       <template v-slot:title>
