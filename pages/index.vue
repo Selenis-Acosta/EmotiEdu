@@ -1,17 +1,16 @@
 <script setup lang="ts">
-import Navegacion from '~/components/Navegacion.vue';
-</script>
+import Navegacion from '@/components/Inicio/Navegacion.vue';</script>
 
 <template>
 <div>
- <Navegacion/>
+ <InicioNavegacion/>
    <br>
    <br>
    <br>
- <BienvenidaTexto/>
- <BienvenidaImagen/>
+ <InicioBienvenidaTexto/>
+ <InicioBienvenidaImagen/>
    <br>
-   <Pie/>
+   <InicioPie/>
 </div>
 </template>
 
