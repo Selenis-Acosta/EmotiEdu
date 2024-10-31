@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import Button from '../Button.vue';
+</script>
+
 <template>
-   <v-col cols="4">
+   <v-col cols="6">
     <v-card
       class="mx-auto"
       width="700"
@@ -13,9 +17,12 @@
   </span>
 </template>
       <template>
-        <span class="font-weight-black" style="font-size: 30px;">La verdadera fortaleza no está en no caer, 
+        <span class="font-weight-black" style="font-size:25px;">La verdadera fortaleza no está en no caer, 
           sino en levantarse cada vez que lo haces</span>
       </template>
+      <br>
+      <br>
+      <InicioButton/>
     </v-card>
   </v-col>
   </template>

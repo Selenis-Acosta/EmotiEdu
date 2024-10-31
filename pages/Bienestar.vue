@@ -1,3 +1,6 @@
 <template>
-    <Menú/>
+    <InicioNavegacion/>
+    <br>
+    <br>
+    <InicioPie/>
 </template>

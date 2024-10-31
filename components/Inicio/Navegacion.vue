@@ -6,7 +6,7 @@
       </v-app-bar-nav-icon>
     </template>
 
-    <v-app-bar-title class="text-blue">
+    <v-app-bar-title>
       <nuxt-link to="/">Inicio</nuxt-link>
     </v-app-bar-title>
 
