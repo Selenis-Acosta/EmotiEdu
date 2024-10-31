@@ -2,5 +2,5 @@
     <InicioNavegacion/>
     <br>
     <br>
-    <InicioPÑJie/>
+    <InicioPie/>
 </template>
