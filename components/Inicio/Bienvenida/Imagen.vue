@@ -1,13 +1,8 @@
 <template>
-  <v-row>
-        <v-col cols="6">
-          <v-card  class="mx-auto"
-      width="500"
-      height="500">
-            <v-img src="https://img.freepik.com/vector-gratis/personas-conectando-piezas-rompecabezas-cabeza-juntos_23-2148424243.jpg?w=740&t=st=1698345101~exp=1698345701~hmac=f2877d6e3d8329bb7c8930ec7c25c178ba3613b9dbb10b541b93e4b4b1c35cb1"
-          height="100%"></v-img>
+ 
+          <v-card  class="mx-auto" >
+            <v-img src="https://img.freepik.com/vector-gratis/gente-diminuta-hermoso-jardin-flores-dentro-cabeza-femenina-aislada-ilustracion-plana_74855-11098.jpg?t=st=1730854126~exp=1730857726~hmac=6054d21ab771ceac6bbfe16a101577cabbb54d2952a37d0138f21dd6bd17243f&w=1060"></v-img>
           </v-card>
-        </v-col>
-      </v-row>
+       
 </template>
  

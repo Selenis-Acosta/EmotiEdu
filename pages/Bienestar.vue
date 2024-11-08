@@ -1,6 +1,5 @@
 <template>
-    <InicioNavegacion/>
-    <br>
-    <br>
-    <InicioPie/>
+    <div>
+        <h1>Bienestar</h1>
+    </div>
 </template>

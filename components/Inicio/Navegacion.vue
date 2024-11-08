@@ -1,4 +1,43 @@
 <template>
+  
+</template>
+<script>
+  export default {
+    data: () => ({
+      drawer: false,
+      group: null,
+      items: [
+        {
+          title: 'Inicio',
+          value: '/',
+        },
+        {
+          title: 'Exploración Emocional',
+          value: '/Exploracion',
+        },
+        {
+          title: 'Centro de Bienestar',
+          value: '/Bienestar',
+        },
+        {
+          title: 'Área de Emergencia',
+          value: '/Emergencia',
+        },
+        {
+          title: 'Zona Personal',
+          value: '/Personal',
+        },
+      ],
+    }),
+
+    watch: {
+      group () {
+        this.drawer = false
+      },
+    },
+  }
+</script>
+<!--template>
   <v-app-bar :elevation="2" color="#bc81e2">
     <template v-slot:prepend>
       <v-app-bar-nav-icon>
@@ -26,4 +65,4 @@
       <nuxt-link to="/Personal">Zona Personal</nuxt-link>
     </v-app-bar-title>
   </v-app-bar>
-</template>
+</template-->
