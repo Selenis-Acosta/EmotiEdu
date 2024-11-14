@@ -1,13 +1,9 @@
 <!-- pages/Exploracion.vue -->
 <template>
-<<<<<<< HEAD
-    
-</template>
-=======
     <div class="exploracion-container purple-background">
       <InicioNavegacion/>
-      <EmocionesBotones />
-      <ExploEmocionesPregunta />
+      <ExploEmocionesBotones />
+      <!-- <ExploEmocionesPregunta />  -->
       <InicioPie/>
     </div>
   </template>
@@ -30,4 +26,3 @@
   }
   </style>
   
->>>>>>> 1dd73cd9c47cb91201349bf6d0c1ba7b843e7295
