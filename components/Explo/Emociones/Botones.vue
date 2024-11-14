@@ -147,7 +147,7 @@ function selectEmotion(emoji) {
 /* Clase personalizada para ajustar el tamaño de la tarjeta */
 .content-card {
   max-width: 800px; /* Cambia este valor para ajustar el ancho máximo */
-  width: 90%; /* Ajuste de ancho relativo */
+  width: 100%; /* Ajuste de ancho relativo */
   padding: 20px; /* Ajuste de padding */
 
     /* Ajustes de altura */
