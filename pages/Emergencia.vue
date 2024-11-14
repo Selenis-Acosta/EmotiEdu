@@ -1,6 +1,6 @@
 <template>
-    <InicioNavegacion/>
-    <br>
-    <br>
+    <div>
+    <InicioNavegacion class="mb-7"/>
     <InicioPie/>
+    </div>
 </template>

@@ -3,22 +3,12 @@
     <div class="exploracion-container purple-background">
       <InicioNavegacion/>
       <EmocionesBotones />
-      <pregunta />
+      <ExploEmocionesPregunta />
       <InicioPie/>
     </div>
   </template>
   
-  <script>
-  import EmocionesBotones from '~/components/Explo/Emociones/Botones.vue';
-  import pregunta from '~/components/Explo/Emociones/pregunta.vue';
-  
-  export default {
-    components: {
-      EmocionesBotones,
-      pregunta
-    }
-  };
-  </script>
+  <script setup></script>
   
   <style scoped>
   .purple-background {
