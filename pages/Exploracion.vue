@@ -9,7 +9,7 @@
   </template>
   
   <script setup>
-  import { useEmotionStore } from '@/store/Emotions';
+  import { useEmotionStore } from '@/store/emotions';
   import { computed } from 'vue';
   
   const emotionStore = useEmotionStore();

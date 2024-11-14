@@ -8,14 +8,14 @@
 
 <style scoped>
 .bg-blue {
-  background-color: #6cd1e1; /* Ajusta este color si quieres un tono específico de azul */
+  background-color: #4a79c0; /* Ajusta este color si quieres un tono específico de azul */
 }
 .footer {
   position: fixed; /* Mantiene el footer fijo en la parte inferior */
   bottom: 0; /* Lo coloca en la parte inferior de la ventana */
   left: 0; /* Se asegura que esté alineado a la izquierda */
   width: 100%; /* Asegura que ocupe todo el ancho */
-  height: 9%; /* Establece una altura fija para el footer */
+  height: 0%; /* Establece una altura fija para el footer */
   padding: 0; /* Elimina el padding predeterminado */
   margin: 0; /* Elimina el margen predeterminado */
   display: flex; /* Usar flexbox para centrar contenido */

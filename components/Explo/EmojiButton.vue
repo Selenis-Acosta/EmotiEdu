@@ -59,8 +59,14 @@
     display: inline-block;
     margin: 10px;
   }
+  
   .emoji-btn {
     font-size: 2rem;
+    color: #5544a3;
+  }
+  
+  .rounded-btn {
+    border-radius: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto flotante */
   }
   </style>
-  
