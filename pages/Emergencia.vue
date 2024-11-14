@@ -1,6 +1,5 @@
 <template>
-    <div>
-    <InicioNavegacion class="mb-7"/>
-    <InicioPie/>
+<div>
+        <h1>Emergencia</h1>
     </div>
 </template>
