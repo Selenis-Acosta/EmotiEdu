@@ -37,12 +37,54 @@ export default {
   data() {
     return {
       emojis: [
-        { name: "happy", imageUrl: "https://example.com/happy.png", content: { title: "Sentimiento Feliz", videoUrl: "https://youtube.com/shorts/Yve7DDLYxu8?si=jSbUU6FgiVCfHCrS", imageUrl: "https://example.com/happy-image.jpg", text: "Hoy te sientes feliz y positivo. Disfruta el momento." } },
-        { name: "Tranquilidad", imageUrl: "https://example.com/neutral.png", content: { title: "Sentimiento Tranquilo", videoUrl: "https://www.youtube.com/embed/neutral-video", imageUrl: "https://example.com/neutral-image.jpg", text: "Me encanta la energía tranquila que tienes hoy. Es contagiosa." } },
-        { name: "neutral", imageUrl: "https://example.com/neutral.png", content: { title: "Sentimiento Neutral", videoUrl: "https://www.youtube.com/embed/neutral-video", imageUrl: "https://example.com/neutral-image.jpg", text: "Es normal sentirse en un punto intermedio, todos pasamos por eso. Date tu espacio para reflexior." } },
-        { name: "sad", imageUrl: "https://example.com/sad.png", content: { title: "Sentimiento Triste", videoUrl: "https://www.youtube.com/embed/sad-video", imageUrl: "https://assets.pinterest.com/ext/embed.html?id=69735494222029044", text: "Es normal sentirse triste a veces. Aquí tienes algunos recursos para mejorar tu día." } },
-        { name: "angry", imageUrl: "https://example.com/angry.png", content: { title: "Sentimiento Enojado", videoUrl: "https://www.youtube.com/embed/angry-video", imageUrl: "https://example.com/angry-image.jpg", text: "El enojo puede ser difícil de manejar. Intenta relajarte con estos recursos." } },
-        { name: "Ansiedad", imageUrl: "https://example.com/neutral.png", content: { title: "Sentimiento Ansioso", videoUrl: "https://youtube.com/shorts/KKV4a8U3mHY?si=NCG93JQIDoP9hlNP", imageUrl: "https://example.com/neutral-image.jpg", text: "El enojo puede ser difícil de manejar. Intenta relajarte con estos recursos." } },
+        { name: "happy", 
+          imageUrl: "https://example.com/happy.png", 
+          content: { title: "Sentimiento Feliz", 
+          videoUrl: "https://youtube.com/shorts/Yve7DDLYxu8?si=jSbUU6FgiVCfHCrS", 
+          imageUrl: "https://example.com/happy-image.jpg", 
+          text: "Hoy te sientes feliz y positivo. Disfruta el momento." } 
+        },
+
+        { name: "Tranquilidad", 
+          imageUrl: "https://example.com/neutral.png", 
+          content: { title: "Sentimiento Tranquilo", 
+          videoUrl: "https://www.youtube.com/embed/neutral-video", 
+          imageUrl: "https://example.com/neutral-image.jpg", 
+          text: "Me encanta la energía tranquila que tienes hoy. Es contagiosa." } 
+        },
+
+        { name: "neutral", 
+          imageUrl: "https://example.com/neutral.png", 
+          content: { title: "Sentimiento Neutral", 
+          videoUrl: "https://www.youtube.com/embed/neutral-video", 
+          imageUrl: "https://example.com/neutral-image.jpg", 
+          text: "Es normal sentirse en un punto intermedio, todos pasamos por eso. Date tu espacio para reflexior." } 
+        },
+        
+        { name: "sad", 
+          imageUrl: "https://example.com/sad.png", 
+          content: { title: "Sentimiento Triste", 
+          videoUrl: "https://www.youtube.com/embed/sad-video", 
+          
+          imageUrl: "https://assets.pinterest.com/ext/embed.html?id=69735494222029044", 
+          text: "Es normal sentirse triste a veces. Aquí tienes algunos recursos para mejorar tu día." } 
+        }, 
+
+        { name: "angry", 
+         imageUrl: "https://example.com/angry.png", 
+         content: { title: "Sentimiento Enojado", 
+         videoUrl: "https://www.youtube.com/embed/angry-video", 
+         imageUrl: "https://example.com/angry-image.jpg", 
+         text: "El enojo puede ser difícil de manejar. Intenta relajarte con estos recursos." } 
+        },
+
+        { name: "Ansiedad", 
+        imageUrl: "https://example.com/neutral.png", 
+        content: { title: "Sentimiento Ansioso", 
+        videoUrl: "https://youtube.com/shorts/KKV4a8U3mHY?si=NCG93JQIDoP9hlNP", 
+        imageUrl: "https://example.com/neutral-image.jpg", 
+        text: "El enojo puede ser difícil de manejar. Intenta relajarte con estos recursos." } 
+      },
       ],
       selectedContent: null,
     };
