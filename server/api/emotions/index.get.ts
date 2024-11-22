@@ -2,7 +2,7 @@ export default defineEventHandler(async (event)=>{
     const emotions =[
         {
             name: "happy",
-            emojiUrl: "https://example.com/happy.png",
+            emojiUrl: "https://cdn.pixabay.com/photo/2016/09/01/08/24/smiley-1635449_1280.png",
             content: {
               title: "Sentimiento Feliz",
               videoUrl: "https://youtube.com/shorts/Yve7DDLYxu8?si=jSbUU6FgiVCfHCrS",

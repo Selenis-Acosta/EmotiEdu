@@ -1,5 +1,6 @@
 <template>
-    <div>
-        <h1>Bienestar</h1>
-    </div>
+  <div>
+    <BienesBuscar/>
+  </div>
 </template>
+
