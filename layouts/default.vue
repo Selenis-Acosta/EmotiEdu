@@ -9,13 +9,6 @@
           <v-toolbar-title>VISTAS</v-toolbar-title>
 
           <v-spacer></v-spacer>
-
-          <template v-if="$vuetify.display.mdAndUp">
-            <v-btn icon="mdi-magnify" variant="text"></v-btn>
-            <v-btn icon="mdi-filter" variant="text"></v-btn>
-          </template>
-
-          <v-btn icon="mdi-dots-vertical" variant="text"></v-btn>
         </v-app-bar>
 
         <!-- Drawer para navegación en dispositivos móviles -->
@@ -48,19 +41,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    drawer: false,
-    items: [
+<script setup>
+    const drawer = ref(false);
+    const items =  ref([
       { title: 'Inicio', value: '/' },
       { title: 'Exploración Emocional', value: '/Exploracion' },
       { title: 'Centro de Bienestar', value: '/Bienestar' },
       { title: 'Área de Emergencia', value: '/Emergencia' },
       { title: 'Zona Personal', value: '/Personal' },
-    ],
-  }),
-};
+    ]);
 </script>
 
 <style>

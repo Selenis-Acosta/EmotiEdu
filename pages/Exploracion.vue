@@ -1,37 +1,19 @@
 <!-- pages/Exploracion.vue -->
 <template>
     <div class="exploracion-container purple-background">
-      <InicioNavegacion/>
       <ExploEmocionesBotones />
       <!-- <ExploEmocionesPregunta />  -->
-      <InicioPie/>
     </div>
   </template>
-  
-  <script setup>
-  import { useEmotionStore } from '@/store/emotions';
-  import { computed } from 'vue';
-  
-  const emotionStore = useEmotionStore();
-  
-  const emojis = computed(() => emotionStore.getEmojis);
-  const selectedContent = computed(() => emotionStore.getSelectedContent);
-  
-  function selectEmotion(emoji) {
-    emotionStore.selectEmotion(emoji);
-  }
-  </script> 
-<!-- <script setup>
-// Instanciar el store
-// import { useProductStore} from '@/'
-const EmotionsStore = useEmotionsStore()
 
+<script setup>
+import { useEmotionStore } from '~/store/emotions';
+const emotionStore = useEmotionStore();
 
-await useAsyncData('Emotions', async () => {
-  await EmotionStore.fetchEmotions()
+await useAsyncData('emotions', async ()=>{
+  await emotionStore.fetchEmoji()
 })
-</script> -->
-
+</script>
   
   <style scoped>
   .purple-background {

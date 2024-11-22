@@ -9,43 +9,27 @@ interface EmojiContent {
 
 interface Emoji {
   name: string;
-  imageUrl: string;
+  emojiUrl: string;
   content: EmojiContent;
 }
 
 export const useEmotionStore = defineStore({
   id: 'emotions',
   state: () => ({
-    emojis: [
-      {
-        name: "happy",
-        imageUrl: "https://example.com/happy.png",
-        content: {
-          title: "Sentimiento Feliz",
-          videoUrl: "https://youtube.com/shorts/Yve7DDLYxu8?si=jSbUU6FgiVCfHCrS",
-          imageUrl: "https://example.com/happy-image.jpg",
-          text: "Hoy te sientes feliz y positivo. Disfruta el momento."
-        }
-      },
-      {
-        name: "Tranquilidad",
-        imageUrl: "https://example.com/neutral.png",
-        content: {
-          title: "Sentimiento Tranquilo",
-          videoUrl: "https://www.youtube.com/embed/neutral-video",
-          imageUrl: "https://example.com/neutral-image.jpg",
-          text: "Me encanta la energía tranquila que tienes hoy. Es contagiosa."
-        }
-      },
-      // Otros emojis aquí...
-    ] as Emoji[],
-    selectedContent: null as EmojiContent | null,
+    emojis: [] as Emoji[],
+    selectedContent: {} as EmojiContent,
   }),
   getters: {
     getEmojis: (state) => state.emojis,
     getSelectedContent: (state) => state.selectedContent,
   },
   actions: {
+    async fetchEmoji (){
+      const emojis = await $fetch('/api/emotions');
+      this.emojis  = emojis;
+      // this.selectEmotion(emojis[0])
+    },
+
     selectEmotion(emoji: Emoji) {
       this.selectedContent = emoji.content;
     }
