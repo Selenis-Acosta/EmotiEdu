@@ -1,3 +1,6 @@
 <template>
-    <Menú/>
+  <div>
+    <BienesBuscar/>
+  </div>
 </template>
+

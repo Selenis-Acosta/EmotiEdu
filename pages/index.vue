@@ -1,16 +1,15 @@
-<script setup lang="ts">
-import Navegacion from '@/components/Inicio/Navegacion.vue';</script>
-
+<script setup>
+</script>
 <template>
-<div>
- <InicioNavegacion/>
-   <br>
-   <br>
-   <br>
- <InicioBienvenidaTexto/>
- <InicioBienvenidaImagen/>
-   <br>
-   <InicioPie/>
-</div>
+<v-container>
+  <v-row>
+    <v-col cols="6">
+      <InicioBienvenidaTexto />
+    </v-col>
+    <v-col cols="6">
+      <InicioBienvenidaImagen />
+    </v-col>
+  </v-row>
+</v-container>
 </template>
 

@@ -1,4 +1,4 @@
-<template>
+<template>  
     <div class="emergencia-page">
       <InicioNavegacion />
       <div class="content">
@@ -83,3 +83,4 @@
   }
   </style>
   
+
