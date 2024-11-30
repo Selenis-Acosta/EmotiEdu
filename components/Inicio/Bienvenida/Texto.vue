@@ -12,7 +12,7 @@
       </v-card-title>
 
       <v-card-subtitle>
-        <span class="font-weight-black" style="font-size: 25px"
+        <span class="font-weight-black" style="font-size: 10px"
         >La verdadera fortaleza no está en no caer, sino en levantarse cada vez
         que lo haces</span
       >

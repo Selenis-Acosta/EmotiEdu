@@ -4,9 +4,6 @@
       <v-row justify="end" dense class="video-container">
         <v-col
           cols="12"
-          sm="6"
-          md="4"
-          lg="3"
           v-for="video in filteredVideos"
           :key="video.id"
           class="video-card"
@@ -26,11 +23,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen></iframe>
-              <!--iframe
-                :src="video.url"
-                frameborder="0"
-                allowfullscreen
-              ></iframe-->
+          
             </v-responsive>
           </v-card>
         </v-col>
