@@ -7,6 +7,7 @@
           sm="6"
           md="4"
           lg="3"
+          
           v-for="video in filteredVideos"
           :key="video.id"
           class="video-card"

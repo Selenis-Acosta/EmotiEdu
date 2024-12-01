@@ -2,7 +2,6 @@
   <div>
     <BienesBuscar/>
     <BienesVideos/>
-
   </div>
 </template>
 
