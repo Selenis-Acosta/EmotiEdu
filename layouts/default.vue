@@ -30,7 +30,7 @@
         </v-navigation-drawer>
 
         <!-- Contenido principal -->
-        <v-main style="height: 600px;">
+        <v-main >
           <slot />
         </v-main>
       </v-layout>
