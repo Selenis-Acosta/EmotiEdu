@@ -10,13 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-
+    "@mdi/font": "^7.4.47",
+    "nutx": "^1.2.0",
+    "nuxt": "^3.14.1592"
   },
   "devDependencies": {
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.3"
-
   }
-
 }
