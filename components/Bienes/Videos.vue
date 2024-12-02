@@ -1,4 +1,4 @@
-<template>
+<template>sss
     <v-container>
       <!-- Contenedor de videos alineados a la derecha -->
       <v-row justify="end" dense class="video-container">
@@ -7,6 +7,7 @@
           sm="6"
           md="4"
           lg="3"
+
           v-for="video in filteredVideos"
           :key="video.id"
           class="video-card"
