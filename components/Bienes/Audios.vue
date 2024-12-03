@@ -36,13 +36,13 @@
             id: 2,
             title: "Episodio 2: Técnicas de relajación",
             description: "Exploramos ejercicios para relajarte.",
-            audioUrl: "https://example.com/audio2.mp3",
+            audioUrl: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4y1laSf0GvCRPVFII2WO9q?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
           },
           {
             id: 3,
             title: "Episodio 3: Hábitos saludables",
             description: "Cómo construir una rutina mentalmente saludable.",
-            audioUrl: "https://example.com/audio3.mp3",
+            audioUrl: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1JQdiQpxxkNw7XQLWGeUkP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
           },
         ],
       };
