@@ -1,9 +1,22 @@
+<script setup>
+
+const searchQuery = ref('')
+const videos = ref([])
+
+const videoStore = useVideoStore();
+
+videoStore.fetchVideos()
+
+videos.value = videoStore.getVideos;
+
+</script>
+
 <template>
     <v-container>
       <!-- Contenedor de videos alineados a la derecha -->
       <v-row justify="end" dense class="video-container">
         <v-col
-          v-for="video in filteredVideos"
+          v-for="video in videos"
           :key="video.id"
           class="video-card"
         >
@@ -30,29 +43,7 @@
     </v-container>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        searchQuery: "",
-        videos: [
-          { id: 1, title: "Conocerse", url: "https://www.youtube.com/embed/Qes1RMK9a50?si=JeHCpzyZSUixkxZl" },
-          { id: 2, title: "El cerebro - emociones", url: "https://www.youtube.com/embed/TjqrualxgkI?si=MS0mQJYJT2BdHWX8" },
-          { id: 3, title: "¿Por qué nos equivocamos en el amor?", url: "https://www.youtube.com/embed/u4duNKPm9cM?si=6278m-XiEnqCcprj" },
-          { id: 4, title: "Relaciones", url: "https://www.youtube.com/embed/US6AMNNkzoc?si=YiCD0P7IOwYUdGfI" },
-        ],
-      };
-    },
-    computed: {
-      filteredVideos() {
-        const query = this.searchQuery.toLowerCase();
-        return this.videos.filter((video) =>
-          video.title.toLowerCase().includes(query)
-        );
-      },
-    },
-  };
-  </script>
+
   
   <style scoped>
   /* Estilos uniformes */
