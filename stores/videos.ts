@@ -17,8 +17,6 @@ export const useVideoStore = defineStore({
   actions: {
     async fetchVideos() {
         const videosApi : any = await $fetch('/api/bienestar')
-        console.log('VideosAPi');
-        console.log(videosApi)
         this.videos = videosApi;
     }
   },

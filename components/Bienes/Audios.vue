@@ -1,13 +1,25 @@
+<script setup>
+
+const searchQuery = ref('')
+const audios = ref([])
+
+const audioStore = useaudioStore();
+
+audioStore.fetchaudio()
+
+Audio.value = audioStore.getAudio;
+
+</script>
 <template>
     <v-container>
       <v-row justify="center">
         <v-col cols="12" md="6" lg="4" v-for="podcast in podcasts" :key="podcast.id">
           <v-card outlined class="mb-4 card-container">
             <v-card-title class="text-h6 white--text card-title">
-              {{ podcast.title }}
+              {{ Podcast.title }}
             </v-card-title>
             <v-card-subtitle class="white--text">
-              {{ podcast.description }}
+              {{ Podcast.description }}
             </v-card-subtitle>
             <v-card-text>
              <div v-html="podcast.audioUrl">
@@ -20,7 +32,7 @@
     </v-container>
   </template>
   
-  <script>
+  <script> 
   export default {
     name: "PodcastSection",
     data() {
@@ -34,13 +46,13 @@
           },
           {
             id: 2,
-            title: "Episodio 2: Poner Limites",
+            title: "Poner Limites",
             /*description: "Exploramos ejercicios para relajarte.", */
             audioUrl: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4y1laSf0GvCRPVFII2WO9q?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
           },
           {
             id: 3,
-            title: "Episodio 3: Acompañamiento Emocional",
+            title: "Acompañamiento Emocional",
            /* description: "Cómo construir una rutina mentalmente saludable.", */
             audioUrl: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1JQdiQpxxkNw7XQLWGeUkP?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
           },
@@ -49,7 +61,7 @@
     },
   };
   </script>
-  
+ 
   <style scoped>
   /* Paleta de colores */
   .card-container {
