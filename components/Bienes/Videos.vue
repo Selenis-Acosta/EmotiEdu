@@ -1,13 +1,8 @@
-<template>sss
+<template>
     <v-container>
       <!-- Contenedor de videos alineados a la derecha -->
       <v-row justify="end" dense class="video-container">
         <v-col
-          cols="12"
-          sm="6"
-          md="4"
-          lg="3"
-
           v-for="video in filteredVideos"
           :key="video.id"
           class="video-card"
@@ -17,7 +12,7 @@
             <v-card-title class="uniform-title">{{ video.title }}</v-card-title>
   
             <!-- Reproductor de video -->
-            <v-responsive :aspect-ratio="16/9" class="video-frame">
+            <v-responsive aspect-ratio="16/9" class="video-frame">
                 <iframe 
                     width="560" 
                     height="315" 
@@ -43,7 +38,8 @@
         videos: [
           { id: 1, title: "Conocerse", url: "https://www.youtube.com/embed/Qes1RMK9a50?si=JeHCpzyZSUixkxZl" },
           { id: 2, title: "El cerebro - emociones", url: "https://www.youtube.com/embed/TjqrualxgkI?si=MS0mQJYJT2BdHWX8" },
-          { id: 3, title: "Relaciones", url: "https://www.youtube.com/embed/u4duNKPm9cM?si=6278m-XiEnqCcprj" },
+          { id: 3, title: "¿Por qué nos equivocamos en el amor?", url: "https://www.youtube.com/embed/u4duNKPm9cM?si=6278m-XiEnqCcprj" },
+          { id: 4, title: "Relaciones", url: "https://www.youtube.com/embed/US6AMNNkzoc?si=YiCD0P7IOwYUdGfI" },
         ],
       };
     },
