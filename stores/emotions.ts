@@ -3,8 +3,6 @@ import { defineStore } from 'pinia';
 interface EmojiContent {
   title: string;
   videoUrl: string;
-  imageUrl: string;
-  text: string;
 }
 
 interface Emoji {

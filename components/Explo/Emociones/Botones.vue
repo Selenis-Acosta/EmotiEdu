@@ -57,15 +57,15 @@ function selectEmotion(emoji) {
 }
 
 .highlight-blue {
-  color: #91c3f5;
+  color: #3695f3;
 }
 
 .highlight-pink {
-  color: #f19dc7;
+  color: #e1559b;
 }
 
 .highlight-lightblue {
-  color: #91c3f5;
+  color: #4089d3;
 }
 
 .emoji-button {
@@ -75,6 +75,16 @@ function selectEmotion(emoji) {
 /* Clase personalizada para ajustar el tamaño de la tarjeta */
 .content-card {
   padding: 200px; /* Ajuste de padding */
+  background-color: #d3b5f5; /* Cambia este valor al color que desees */
+  color: #2b0335; /* Cambia el color del texto si es necesario */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
 
 }
 </style>
