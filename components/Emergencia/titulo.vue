@@ -1,6 +1,4 @@
 <template>
-    <div>
-     <v-container>
     <!-- Título -->
     <v-row class="text-center mb-5">
       <v-col>
@@ -14,8 +12,4 @@
         </v-card>
       </v-col>
     </v-row>
-     </v-container>
-    </div>
-  </template>
-  
-  
+</template>
