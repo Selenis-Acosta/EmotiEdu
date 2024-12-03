@@ -3,7 +3,7 @@
 
     <EmergenciaTitulo/>
 
-    
+    <EmergenciaRecursos/>
 
     <!-- Contactos de Emergencia -->
     <v-row>
