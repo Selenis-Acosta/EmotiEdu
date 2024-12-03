@@ -7,7 +7,6 @@
   </template>
 
 <script setup>
-import { useEmotionStore } from '~/store/emotions';
 const emotionStore = useEmotionStore();
 
 await useAsyncData('emotions', async ()=>{

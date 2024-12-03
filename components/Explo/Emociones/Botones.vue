@@ -30,7 +30,6 @@
   </div>
 </template>
 <script setup>
-import { useEmotionStore } from '~/store/emotions';
 const emotionStore = useEmotionStore();
 
 
