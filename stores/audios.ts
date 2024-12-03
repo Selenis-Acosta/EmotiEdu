@@ -14,10 +14,10 @@ export const useAudioStore = defineStore({
     getAudios: (state) => state.audios,
   },
   actions: {
-    async fetchpodcast() {
-        const audiosApi : any = await $fetch('/api/bienestar/audios')
-        console.log('audiosAPi');
-        console.log(audiosApi)
+    async fetchAudios() {
+        const audiosApi : any = await $fetch('/api/bienestar/audio')
+        // console.log('audiosAPi');
+        // console.log(audiosApi)
         this.audios = audiosApi;
     }
   },

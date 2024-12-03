@@ -3,23 +3,25 @@
 const searchQuery = ref('')
 const audios = ref([])
 
-const audioStore = useaudioStore();
+const audioStore = useAudioStore();
 
-audioStore.fetchaudio()
+// audioStore.fetchAudios()
 
-Audio.value = audioStore.getAudio;
+audios.value =audioStore.getAudios
+
 
 </script>
 <template>
     <v-container>
+
       <v-row justify="center">
-        <v-col cols="12" md="6" lg="4" v-for="podcast in podcasts" :key="podcast.id">
+        <v-col cols="12" md="6" lg="4" v-for="podcast in audios" :key="podcast.id">
           <v-card outlined class="mb-4 card-container">
             <v-card-title class="text-h6 white--text card-title">
-              {{ Podcast.title }}
+              {{ podcast.title }}
             </v-card-title>
             <v-card-subtitle class="white--text">
-              {{ Podcast.description }}
+              {{ podcast.description }}
             </v-card-subtitle>
             <v-card-text>
              <div v-html="podcast.audioUrl">

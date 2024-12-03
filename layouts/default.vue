@@ -48,7 +48,6 @@
       { title: 'Exploración Emocional', value: '/Exploracion' },
       { title: 'Centro de Bienestar', value: '/Bienestar' },
       { title: 'Área de Emergencia', value: '/Emergencia' },
-      { title: 'Zona Personal', value: '/Personal' },
     ]);
 </script>
 
